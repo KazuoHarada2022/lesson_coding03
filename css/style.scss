@@ -37,7 +37,8 @@ a {
   & span.section_title_ja {
     display: block;
     font-size: 0.75rem;
-    width: 60px;
+    font-weight: normal;
+    width: 120px;
   }
 }
 @media  screen and (min-width: 901px){
@@ -76,8 +77,9 @@ a {
     }
     & span.section_title_ja {
       display: block;
+      font-weight: normal;
       font-size: 0.75rem;
-      width: 60px;
+      width: 120px;
     }
   }
 }
@@ -122,6 +124,7 @@ header {
 @media  screen and (min-width: 901px) {
   header {
     display: flex;
+    align-items: center;
   
     width: 100%;
     height: 80px;
@@ -131,16 +134,19 @@ header {
       font-size: 2rem;
       font-weight: lighter;
       text-align: center;
-      margin-left: 90px;
+      // margin-left: 90px;
+      margin: 0 30px 0 90px;
     }
   }
   .nav_list {
     display: flex;
+    align-items: center;
   
     & li > a {
       display: block;
       font-size: 1rem;
-      margin: 20px 0 0 40px;
+      // margin: 10px 0 0 40px;
+      margin-left: 10px;
       text-align: center;
       align-items: center;
     }
@@ -149,6 +155,7 @@ header {
   
   .nav_button {
     width: 200px;
+    height: 80px;
     border: 1px solid #000;
     background-color: #000;
     display: block;
@@ -192,6 +199,7 @@ section.news {
   }
 
   & ul.news_list > li > .date_aria > span {
+
     border: 1px solid #000;
     background-color: #000;
     color: #fff;
@@ -200,7 +208,8 @@ section.news {
 @media  screen and (min-width: 901px){
   section.news {
     width: 1000px;
-    height: 100vh;
+    // height: 100vh;
+    height: 400px;
     margin: 120px auto 0;
   
     & ul.news_list {
@@ -221,6 +230,8 @@ section.news {
     }
   
     & ul.news_list > li > .date_aria > span {
+      font-size: 0.5rem;
+      padding: 2px 5px;
       border: 1px solid #000;
       background-color: #000;
       color: #fff;
@@ -256,7 +267,8 @@ section.news {
   .about {
     display: flex;
     width: 100%;
-    height: 100vh;
+    // height: 100vh;
+    height: 700px;
     
   
     & .about_image > img {
@@ -312,8 +324,8 @@ section.news {
 @media  screen and (min-width: 901px) {
   .business {
     width: 1000px;
-    height: 1000px;
-    margin: 250px auto 100px;
+    height: 900px;
+    margin: 100px auto 100px;
   
     & .business_list {
       width: 1000px;
@@ -363,14 +375,14 @@ section.news {
 
 
 
-  & .company_info > dt {
+  & .info_item > dt {
     width: 20%;
     text-align: start;
     margin-left: 15px;
     line-height: 35px;
   }
 
-  & .company_info > dd {
+  & .info_item > dd {
     
     text-align: start;
     line-height: 35px;
@@ -392,8 +404,8 @@ section.news {
     position: relative;
   
     & .company_desc {
-      width: 570px;
-      height: 850px;
+      width: 600px;
+      height: 700px;
       padding-top: 100px;
       background-color: #fff;
       text-align: center; 
@@ -404,16 +416,22 @@ section.news {
       margin-left: 30px;
     }
   
-    & .company_info {
+    // & .company_info {
+    //   display: flex;
+    //   flex-wrap: wrap;
+    // }
+    & .info_item {
       display: flex;
-      flex-wrap: wrap;
     }
-    & .company_info > dt {
+    
+    & .info_item > dt {
+      display: block;
+      text-align: center;
       width: 20%;
-      line-height: 35px;
+      // line-height: 35px;
     }
   
-    & .company_info > dd {
+    & .info_item > dd {
       width: 80%;
       text-align: start;
       line-height: 35px;
@@ -425,7 +443,7 @@ section.news {
       left: 500px;
     }
     & .company_image > img {
-      width: 550px;
+      width: 600px;
       height: 400px;
       object-fit: cover;
     }
@@ -456,7 +474,10 @@ footer {
   }
 }
 @media  screen and (min-width: 901px) {
-  .footer {
+  footer {
+    width: 100%;
+    margin: 0 auto;
+
     & .footer_content {
       width: 1000px;
       display: flex;
@@ -467,17 +488,20 @@ footer {
       font-size: 2rem;
       font-weight: lighter;
       text-align: center;
-      margin: 80px 20px ;
+      margin: 80px 0 ;
     }
   
     & .footer_desc {
+      // width: 250px;
+      
       margin-left: auto;
       margin-top: 40px;
     }
   
-    & .footer_copy {
+    & p.footer_copy {
+      display: block;
       width: 1000px;
-      margin: 10px auto;
+      margin: 20px 260px
     }
   }
 }
