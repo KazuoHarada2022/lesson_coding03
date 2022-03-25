@@ -37,7 +37,8 @@ a {
 .section_title span.section_title_ja {
   display: block;
   font-size: 0.75rem;
-  width: 60px;
+  font-weight: normal;
+  width: 120px;
 }
 
 @media screen and (min-width: 901px) {
@@ -73,8 +74,9 @@ a {
   }
   .section_title span.section_title_ja {
     display: block;
+    font-weight: normal;
     font-size: 0.75rem;
-    width: 60px;
+    width: 120px;
   }
 }
 
@@ -117,6 +119,9 @@ header h1.main_logo {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 100%;
     height: 80px;
     background-color: #dedede;
@@ -125,17 +130,20 @@ header h1.main_logo {
     font-size: 2rem;
     font-weight: lighter;
     text-align: center;
-    margin-left: 90px;
+    margin: 0 30px 0 90px;
   }
   .nav_list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .nav_list li > a {
     display: block;
     font-size: 1rem;
-    margin: 20px 0 0 40px;
+    margin-left: 10px;
     text-align: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -143,6 +151,7 @@ header h1.main_logo {
   }
   .nav_button {
     width: 200px;
+    height: 80px;
     border: 1px solid #000;
     background-color: #000;
     display: block;
@@ -193,7 +202,7 @@ section.news ul.news_list > li > .date_aria > span {
 @media screen and (min-width: 901px) {
   section.news {
     width: 1000px;
-    height: 100vh;
+    height: 400px;
     margin: 120px auto 0;
   }
   section.news ul.news_list {
@@ -215,6 +224,8 @@ section.news ul.news_list > li > .date_aria > span {
     padding-left: 0;
   }
   section.news ul.news_list > li > .date_aria > span {
+    font-size: 0.5rem;
+    padding: 2px 5px;
     border: 1px solid #000;
     background-color: #000;
     color: #fff;
@@ -249,7 +260,7 @@ section.news ul.news_list > li > .date_aria > span {
     display: -ms-flexbox;
     display: flex;
     width: 100%;
-    height: 100vh;
+    height: 700px;
   }
   .about .about_image > img {
     width: 760px;
@@ -290,8 +301,8 @@ section.news ul.news_list > li > .date_aria > span {
 @media screen and (min-width: 901px) {
   .business {
     width: 1000px;
-    height: 1000px;
-    margin: 250px auto 100px;
+    height: 900px;
+    margin: 100px auto 100px;
   }
   .business .business_list {
     width: 1000px;
@@ -339,14 +350,14 @@ section.news ul.news_list > li > .date_aria > span {
   margin-left: 30px;
 }
 
-.company .company_info > dt {
+.company .info_item > dt {
   width: 20%;
   text-align: start;
   margin-left: 15px;
   line-height: 35px;
 }
 
-.company .company_info > dd {
+.company .info_item > dd {
   text-align: start;
   line-height: 35px;
   margin-left: 30px;
@@ -368,8 +379,8 @@ section.news ul.news_list > li > .date_aria > span {
     position: relative;
   }
   .company .company_desc {
-    width: 570px;
-    height: 850px;
+    width: 600px;
+    height: 700px;
     padding-top: 100px;
     background-color: #fff;
     text-align: center;
@@ -378,18 +389,17 @@ section.news ul.news_list > li > .date_aria > span {
   .company .section_title {
     margin-left: 30px;
   }
-  .company .company_info {
+  .company .info_item {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
   }
-  .company .company_info > dt {
+  .company .info_item > dt {
+    display: block;
+    text-align: center;
     width: 20%;
-    line-height: 35px;
   }
-  .company .company_info > dd {
+  .company .info_item > dd {
     width: 80%;
     text-align: start;
     line-height: 35px;
@@ -401,7 +411,7 @@ section.news ul.news_list > li > .date_aria > span {
     left: 500px;
   }
   .company .company_image > img {
-    width: 550px;
+    width: 600px;
     height: 400px;
     -o-object-fit: cover;
        object-fit: cover;
@@ -430,26 +440,31 @@ footer p.footer_copy {
 }
 
 @media screen and (min-width: 901px) {
-  .footer .footer_content {
+  footer {
+    width: 100%;
+    margin: 0 auto;
+  }
+  footer .footer_content {
     width: 1000px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     margin: 0 auto;
   }
-  .footer h2.main_logo {
+  footer h2.main_logo {
     font-size: 2rem;
     font-weight: lighter;
     text-align: center;
-    margin: 80px 20px;
+    margin: 80px 0;
   }
-  .footer .footer_desc {
+  footer .footer_desc {
     margin-left: auto;
     margin-top: 40px;
   }
-  .footer .footer_copy {
+  footer p.footer_copy {
+    display: block;
     width: 1000px;
-    margin: 10px auto;
+    margin: 20px 260px;
   }
 }
 /*# sourceMappingURL=style.css.map */
