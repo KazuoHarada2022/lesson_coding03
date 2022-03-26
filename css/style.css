@@ -269,8 +269,8 @@ section.news ul.news_list > li > .date_aria > span {
        object-fit: cover;
   }
   .about .about_list {
-    width: 1fr;
-    margin: 200px 20px 0 50px;
+    width: 500px;
+    margin: 200px 20px 0 80px;
   }
   .about .about_desc {
     width: 480px;
